@@ -72,7 +72,7 @@ btnHold.addEventListener('click', function () {
       score[0] = score[0] + Number(current1.textContent);
       score1.textContent = score[0];
 
-      if (score[0] >= 10) {
+      if (score[0] >= 100) {
         document
           .querySelector(`.player--${activePlayer}`)
           .classList.add('player--winner');
@@ -91,7 +91,7 @@ btnHold.addEventListener('click', function () {
     } else if (activePlayer === 0) {
       score[1] = score[1] + Number(current0.textContent);
       score0.textContent = score[1];
-      if (score[1] >= 10) {
+      if (score[1] >= 100) {
         document
           .querySelector(`.player--${activePlayer}`)
           .classList.add('player--winner');
